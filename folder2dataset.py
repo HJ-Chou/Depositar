@@ -17,18 +17,18 @@ folder_name = ''  # Dataset name on depositar
 # Dataset details
 dataset_dict = {
     'name': folder_name,  # Use the folder name as the dataset name
-    #'notes': '',  # Description of dataset
+    'notes': '',  # Description of dataset
     'owner_org': '',  # Project ID, if your project link is 'https://data.depositar.io/organization/abc' the abd would be Project ID.
     'author': '',  # Author name
     'data_type': 'other',  # Dataset type
-    'license_id': 'cc-by-4.0'  # License type
+    'license_id': 'cc-by',  # License type
+    'license_title': 'CC-BY 4.0'
 }
 
 # CKAN API URLs and API Key
 ckan_package_create_url = 'https://data.depositar.io/api/3/action/package_create'
 ckan_resource_create_url = 'https://data.depositar.io/api/3/action/resource_create'
 api_key = ''  # user need to create an api token, it can be found on the depositar user page
-
 # Headers
 headers = {
     'Authorization': api_key,
